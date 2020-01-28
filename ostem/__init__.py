@@ -1,7 +1,16 @@
-from ostem.atom import reduce
-from ostem.transcription import classic_alphabet
-
+from ostem.translation import translate, from_ostem, translate_word, from_russian
 
 if __name__ == '__main__':
-    while True:
-        print('\n\n'.join(a.article(classic_alphabet) for a in reduce(input(), default=tuple())))
+    cmd = ''
+
+    actions = {
+        ':t': lambda: print(translate(input())),
+        ':fo': lambda: print(from_ostem(input())),
+        ':fr': lambda: print(from_russian(input())),
+    }
+
+    while cmd != ':q':
+        try:
+            actions.get(cmd := input(), lambda: print('Wrong command'))()
+        except Exception as ex:
+            print(ex)
