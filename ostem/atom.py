@@ -23,3 +23,16 @@ with open('../assets/atoms.json', encoding='UTF-8') as f:
 def get_atom(word, default=None):
     l = [a for a in atoms if a.text == word]
     return l[0] if l else default
+
+
+def reduce(word, default=None):
+    if not word:
+        return []
+
+    for atom in atoms:
+        if word.startswith(atom.text):
+            rest = reduce(word[len(atom.text):], default)
+            if rest != default:
+                return [atom] + rest
+
+    return default
