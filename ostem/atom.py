@@ -1,23 +1,24 @@
 import json
 
+from ostem.meaning import Meaning
 from ostem.transcription import transcribe
 
 
 class Atom:
-    def __init__(self, text, meaning):
+    def __init__(self, text, meanings):
         self.text = text
-        self.meaning = meaning
+        self.meanings = meanings
 
     def article(self, alphabet):
         return '{0} [{1}] - {2}'.format(
             self.text,
             transcribe(self.text, alphabet),
-            self.meaning,
+            ', '.join(str(m) for m in self.meanings),
         )
 
 
 with open('../assets/atoms.json', encoding='UTF-8') as f:
-    atoms = [Atom(**a) for a in json.load(f)]
+    atoms = [Atom(a["text"], [Meaning(**m) for m in a["meanings"]]) for a in json.load(f)]
 
 
 def get_atom(word, default=None):

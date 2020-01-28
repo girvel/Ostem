@@ -1,14 +1,37 @@
 [
   {
     "text": "oc",
-    "meaning": "язык, речь"
+    "meanings": [
+      {
+        "value": "язык",
+        "note": ""
+      },
+      {
+        "value": "речь",
+        "note": ""
+      }
+    ]
   },
   {
     "text": "teh",
-    "meaning": "порядок, упорядоченность"
+    "meanings": [
+      {
+        "value": "порядок",
+        "note": ""
+      },
+      {
+        "value": "упорядоченность",
+        "note": ""
+      }
+    ]
   },
   {
     "text": "oct",
-    "meaning": "прошлое"
+    "meanings": [
+      {
+        "value": "прошлое",
+        "note": ""
+      }
+    ]
   }
 ]
