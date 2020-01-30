@@ -1,65 +1,14 @@
 [
   {
-    "text": "oc",
+    "text": "ay",
     "meanings": [
       {
-        "value": "порядок",
-        "note": ""
-      },
-      {
-        "value": "упорядоченность",
+        "value": "газ",
         "note": ""
       }
     ],
-    "note": ""
-  },
-  {
-    "text": "woy",
-    "meanings": [
-      {
-        "value": "сущность",
-        "note": ""
-      },
-      {
-        "value": "объект",
-        "note": ""
-      }
-    ],
-    "note": "Наиболее общий атом. Ставится перед слогами, которые надо сделать дополнением. Напр. teh - порядок, woyteh - сущности порядка, народ порядка."
-  },
-  {
-    "text": "teh",
-    "meanings": [
-      {
-        "value": "язык",
-        "note": ""
-      },
-      {
-        "value": "речь",
-        "note": ""
-      }
-    ],
-    "note": ""
-  },
-  {
-    "text": "oct",
-    "meanings": [
-      {
-        "value": "прошлое",
-        "note": ""
-      }
-    ],
-    "note": ""
-  },
-  {
-    "text": "wa",
-    "meanings": [
-      {
-        "value": "он(а)",
-        "note": ""
-      }
-    ],
-    "note": "Значение местоимения определяется последним использованием формулы `wa <слово>`"
+    "note": "",
+    "basics": null
   },
   {
     "text": "dox",
@@ -73,17 +22,30 @@
         "note": ""
       }
     ],
-    "note": ""
+    "note": "",
+    "basics": null
   },
   {
-    "text": "ay",
+    "text": "el'",
     "meanings": [
       {
-        "value": "газ",
+        "value": "который",
         "note": ""
       }
     ],
-    "note": ""
+    "note": "Связка, заменяющая причастие",
+    "basics": null
+  },
+  {
+    "text": "heh",
+    "meanings": [
+      {
+        "value": "человек",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": null
   },
   {
     "text": "no",
@@ -97,26 +59,85 @@
         "note": ""
       }
     ],
-    "note": ""
+    "note": "",
+    "basics": null
   },
   {
-    "text": "heh",
+    "text": "oc",
     "meanings": [
       {
-        "value": "человек",
+        "value": "порядок",
+        "note": ""
+      },
+      {
+        "value": "упорядоченность",
         "note": ""
       }
     ],
-    "note": ""
+    "note": "",
+    "basics": null
   },
   {
-    "text": "el'",
+    "text": "oct",
     "meanings": [
       {
-        "value": "который",
+        "value": "прошлое",
         "note": ""
       }
     ],
-    "note": "Связка, заменяющая причастие"
+    "note": "",
+    "basics": null
+  },
+  {
+    "text": "osh",
+    "meanings": [
+      {
+        "value": "я",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": null
+  },
+  {
+    "text": "teh",
+    "meanings": [
+      {
+        "value": "язык",
+        "note": ""
+      },
+      {
+        "value": "речь",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": null
+  },
+  {
+    "text": "wa",
+    "meanings": [
+      {
+        "value": "он(а)",
+        "note": ""
+      }
+    ],
+    "note": "Значение местоимения определяется последним использованием формулы `wa <слово>`",
+    "basics": null
+  },
+  {
+    "text": "woy",
+    "meanings": [
+      {
+        "value": "сущность",
+        "note": ""
+      },
+      {
+        "value": "объект",
+        "note": ""
+      }
+    ],
+    "note": "Наиболее общий атом. Ставится перед слогами, которые надо сделать дополнением. Напр. teh - порядок, woyteh - сущности порядка, народ порядка.",
+    "basics": null
   }
 ]

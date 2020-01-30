@@ -31,11 +31,18 @@ class Word:
         return f'<Word `{self.text}`>'
 
 
-with open('../assets/atoms.json', encoding='UTF-8') as f:
-    atoms = [Word(a["text"], [Meaning(**m) for m in a["meanings"]], a["note"]) for a in json.load(f)]
+def load_words(path):
+    with open(path, encoding='UTF-8') as f:
+        return [Word(
+            a["text"],
+            [Meaning(**m) for m in a["meanings"]],
+            a["note"],
+            a.get("basics")
+        ) for a in json.load(f)]
 
-with open('../assets/words.json', encoding='UTF-8') as f:
-    words = [Word(w["text"], [Meaning(**m) for m in w["meanings"]], w["note"], w["basics"]) for w in json.load(f)]
+
+atoms = load_words('../assets/atoms.json')
+words = load_words('../assets/words.json')
 
 all_words = atoms + words
 
