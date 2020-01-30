@@ -1,7 +1,8 @@
 import json
-from tkinter import Tk, Label, Entry, Button, END
+from tkinter import Tk, Label, Entry, Button, END, messagebox
 
 from ostem.meaning import Meaning
+from ostem.transcription import classic_alphabet
 from ostem.words import load_words, Word
 
 atoms = load_words('../assets/atoms.json')
@@ -28,7 +29,17 @@ note_entry.pack()
 
 
 def push():
-    (words if basics_entry.get() else atoms).append(
+    l = words if basics_entry.get() else atoms
+
+    if any(w.text == word_entry.get() for w in l):
+        messagebox.showinfo('Wrong input', f'The word "{word_entry.get()}" is already in the list')
+        return
+
+    if any(c not in classic_alphabet for c in word_entry.get()):
+        messagebox.showinfo('Wrong input', f'The word "{word_entry.get()}" contains wrong characters')
+        return
+
+    l.append(
         Word(
             word_entry.get(),
             [Meaning(w, '') for w in meaning_entry.get().split(', ')],

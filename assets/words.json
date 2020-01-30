@@ -40,5 +40,19 @@
       "woy",
       "oc"
     ]
+  },
+  {
+    "text": "xaoc",
+    "meanings": [
+      {
+        "value": "хаос",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": [
+      "xa",
+      "oc"
+    ]
   }
 ]
