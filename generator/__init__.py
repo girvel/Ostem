@@ -3,10 +3,7 @@ from tkinter import Tk, Label, Entry, Button, END, messagebox
 
 from ostem.meaning import Meaning
 from ostem.transcription import classic_alphabet
-from ostem.words import load_words, Word
-
-atoms = load_words('../assets/atoms.json')
-words = load_words('../assets/words.json')
+from ostem.words import Word, get, words, atoms
 
 master = Tk()
 master.geometry('200x250')
@@ -27,6 +24,11 @@ Label(master, text='Note').pack()
 note_entry = Entry()
 note_entry.pack()
 
+counter = Label(master)
+
+counter.refresh = lambda: counter.configure(text=f'{len(words) + len(atoms)} words')
+counter.refresh()
+
 
 def push():
     l = words if basics_entry.get() else atoms
@@ -37,6 +39,10 @@ def push():
 
     if any(c not in classic_alphabet for c in word_entry.get()):
         messagebox.showinfo('Wrong input', f'The word "{word_entry.get()}" contains wrong characters')
+        return
+
+    if any(not get(b, words + atoms) for b in basics_entry.get().split(', ')):
+        messagebox.showinfo('Wrong input', f'There are some unknown sequencing sources')
         return
 
     l.append(
@@ -53,9 +59,12 @@ def push():
     note_entry.delete(0, END)
     basics_entry.delete(0, END)
 
+    counter.refresh()
+
 
 push_button = Button(master, command=push, text='Push')
 push_button.pack()
+counter.pack()
 
 
 if __name__ == '__main__':

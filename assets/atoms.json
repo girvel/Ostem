@@ -37,10 +37,81 @@
     "basics": null
   },
   {
+    "text": "geht",
+    "meanings": [
+      {
+        "value": "есть",
+        "note": ""
+      },
+      {
+        "value": "быть",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": null
+  },
+  {
+    "text": "h'az'",
+    "meanings": [
+      {
+        "value": "правитель",
+        "note": ""
+      },
+      {
+        "value": "князь",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": null
+  },
+  {
     "text": "heh",
     "meanings": [
       {
         "value": "человек",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": null
+  },
+  {
+    "text": "ho",
+    "meanings": [
+      {
+        "value": "благоприятный",
+        "note": ""
+      },
+      {
+        "value": "родной",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": null
+  },
+  {
+    "text": "k'ep",
+    "meanings": [
+      {
+        "value": "корабль",
+        "note": ""
+      },
+      {
+        "value": "транспорт",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": null
+  },
+  {
+    "text": "kas",
+    "meanings": [
+      {
+        "value": "придать",
         "note": ""
       }
     ],
@@ -100,6 +171,54 @@
     "basics": null
   },
   {
+    "text": "oyh",
+    "meanings": [
+      {
+        "value": "когда",
+        "note": ""
+      }
+    ],
+    "note": "связка времени",
+    "basics": null
+  },
+  {
+    "text": "re",
+    "meanings": [
+      {
+        "value": "три",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": null
+  },
+  {
+    "text": "roh",
+    "meanings": [
+      {
+        "value": "множество",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": null
+  },
+  {
+    "text": "tcah",
+    "meanings": [
+      {
+        "value": "территория",
+        "note": ""
+      },
+      {
+        "value": "земля",
+        "note": ""
+      }
+    ],
+    "note": "Атом для секвенсирования названий государств и стран",
+    "basics": null
+  },
+  {
     "text": "teh",
     "meanings": [
       {
@@ -126,6 +245,17 @@
     "basics": null
   },
   {
+    "text": "weh",
+    "meanings": [
+      {
+        "value": "сутки",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": null
+  },
+  {
     "text": "woy",
     "meanings": [
       {
@@ -149,6 +279,17 @@
       },
       {
         "value": "[отрицание]",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": null
+  },
+  {
+    "text": "zeh",
+    "meanings": [
+      {
+        "value": "необходимость",
         "note": ""
       }
     ],

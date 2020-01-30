@@ -23,7 +23,12 @@ class Word:
             transcribe(self.text, alphabet),
             ', '.join(str(m) for m in self.meanings),
             f' {self.note}.' if self.note else '',
-            (' Секв. из ' + ', '.join(get(a, all_words).short_article() for a in self.basics) + '.')
+            (' Секв. из '
+             + ', '.join(
+                        get(a, all_words).short_article()
+                        if get(a, all_words) else a
+                        for a in self.basics) + '.'
+             )
             if self.basics else ''
         )
 

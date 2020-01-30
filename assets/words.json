@@ -14,6 +14,58 @@
     ]
   },
   {
+    "text": "h'az'tcahoc",
+    "meanings": [
+      {
+        "value": "император Ордена Порядка",
+        "note": ""
+      }
+    ],
+    "note": "Короткий титул",
+    "basics": [
+      "h'az'",
+      "tcahoc"
+    ]
+  },
+  {
+    "text": "kasxaoc",
+    "meanings": [
+      {
+        "value": "атаковать",
+        "note": ""
+      },
+      {
+        "value": "погрузить в хаос",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": [
+      "kas",
+      "xa",
+      "oc"
+    ]
+  },
+  {
+    "text": "ock'eproh",
+    "meanings": [
+      {
+        "value": "Флот",
+        "note": ""
+      },
+      {
+        "value": "флотилия",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": [
+      "oc",
+      "k'ep",
+      "roh"
+    ]
+  },
+  {
     "text": "octeh",
     "meanings": [
       {
@@ -25,6 +77,20 @@
     "basics": [
       "oc",
       "teh"
+    ]
+  },
+  {
+    "text": "tcahoc",
+    "meanings": [
+      {
+        "value": "Орден Порядка",
+        "note": ""
+      }
+    ],
+    "note": "",
+    "basics": [
+      "tcah",
+      "oc"
     ]
   },
   {
@@ -53,6 +119,24 @@
     "basics": [
       "xa",
       "oc"
+    ]
+  },
+  {
+    "text": "xawoyoc",
+    "meanings": [
+      {
+        "value": "враг",
+        "note": ""
+      },
+      {
+        "value": "противник народа войос",
+        "note": ""
+      }
+    ],
+    "note": "Слово является противоположностью значения слова \"войос\" и обозначает непосредственных противников этого народа",
+    "basics": [
+      "xa",
+      "woyoc"
     ]
   }
 ]
